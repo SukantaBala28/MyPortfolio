@@ -1,10 +1,24 @@
-# my-project
+# MyPortfolio Project
+
+#This is my personal portfolio project. The project is based on VueJs platform a modern JavaScript Framework. Technology used: NodeJs, VueJs, Bootstrap, jQuery and so on.
+
+For running this project please clone or download this repository.
+
+Then go to your project directory and run the command: 
+
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+Please make sure you have running nodejs above 6+ version and npm 3+ version.
+
 
 > A Vue.js project
 
 ## Build Setup
 
-``` bash
 # install dependencies
 npm install
 
@@ -25,6 +39,3 @@ npm run e2e
 
 # run all tests
 npm test
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
