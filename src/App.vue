@@ -1,6 +1,7 @@
 <template>
   <div id="app">
   	<navbar></navbar>
+    <slider></slider>
     <router-view></router-view>
     <footerbar></footerbar>
   </div>
@@ -8,11 +9,13 @@
 
 <script>
 import Navbar from './components/layouts/Navbar.vue'
+import Slider from './components/layouts/Slider.vue'
 import FooterBar from './components/layouts/FooterBar.vue'
 export default {
   components: {
     navbar: Navbar,
-    footerbar: FooterBar
+    footerbar: FooterBar,
+    slider: Slider
   }
 }
 </script>
