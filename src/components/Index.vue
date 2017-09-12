@@ -189,8 +189,11 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center" style="padding-bottom:50px;">
-            <h1>CONTACT ME</h1>
-            <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+            <h1>CONTACT WITH ME</h1>
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-handshake-o fa-stack-1x fa-inverse"></i>
+            </span>
           </div>
         </div>
         <div class="row text-center">
@@ -232,6 +235,13 @@ export default {
 <style scoped>
   .aboutme,.services,.portfolio,.team,.feedback,.contactme{
     padding: 100px 0px 50px 0px;
+  }
+  .contactme{
+    background-color: #222;
+    background-image: url(../assets/img/map-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
   }
 </style>
 
