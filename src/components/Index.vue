@@ -1,6 +1,6 @@
 <template>
   <div id="content-section">
-    <div class="aboutme">
+    <div id="about" class="aboutme">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center" style="padding-bottom:50px;">
@@ -37,7 +37,7 @@
       </div>
     </div>
 
-    <div class="services">
+    <div id="services" class="services">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center" style="padding-bottom:50px;">
@@ -74,7 +74,7 @@
       </div>
     </div>
 
-    <div class="portfolio">
+    <div id="portfolio" class="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center" style="padding-bottom:50px;">
@@ -111,7 +111,7 @@
       </div>
     </div>
 
-    <div class="team">
+    <div id="team" class="team">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center" style="padding-bottom:50px;">
@@ -148,7 +148,7 @@
       </div>
     </div>
 
-    <div class="feedback">
+    <div id="feedback" class="feedback">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center" style="padding-bottom:50px;">
@@ -185,7 +185,7 @@
       </div>
     </div>
 
-    <div class="contactme">
+    <div id="contact" class="contactme">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center" style="padding-bottom:50px;">

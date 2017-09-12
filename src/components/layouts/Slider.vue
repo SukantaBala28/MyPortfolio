@@ -1,35 +1,71 @@
 <template>
-  	<div class="slider-division"> 
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-		  <ol class="carousel-indicators">
-		    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-		    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-		    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-		  </ol>
-		  <div class="carousel-inner">
-		    <div class="carousel-item active">
-		      <img class="d-block w-100" src="../../assets/img/la.jpg" alt="First slide">
-		    </div>
-		    <div class="carousel-item">
-		      <img class="d-block w-100" src="../../assets/img/chicago.jpg" alt="Second slide">
-		    </div>
-		    <div class="carousel-item">
-		      <img class="d-block w-100" src="../../assets/img/ny.jpg" alt="Third slide">
-		    </div>
-		  </div>
-		  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		    <span class="sr-only">Previous</span>
-		  </a>
-		  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-		    <span class="sr-only">Next</span>
-		  </a>
-		</div>
-	</div>
+  <main>
+    <agile :arrows="false" :speed="1150"
+    :timing="'linear'" :fade="true"
+    :autoplay="true" :pauseOnHover="false">
+	    <div class="slide slide--1"><h1 style="color:red">Slide 1</h1></div>
+	    <div class="slide slide--2"><h1>Slide 2</h1></div>
+	    <div class="slide slide--3"><h1>Slide 3</h1></div>
+		</agile>
+  </main>
 </template>
 
 <script>
-export default {
-}
+	import Vue from 'vue'
+	import VueAgile from 'vue-agile'
+	Vue.use(VueAgile)
+
+	export default {
+	}
 </script>
+
+<style lang="scss">
+.agile {
+    &__dots {
+        bottom: 0;
+        display: block;
+        left: 10px;
+        position: absolute;
+        width: 10px;
+    }
+
+    &__dot {
+        margin-bottom: 10px;
+
+        button {
+            background-color: transparent;
+            border: 1px solid #fff;
+            margin-top: 10px;
+
+            &:hover {
+                background-color: #fff;
+            }
+        }
+
+        &--current {
+            button {
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+.slide {
+    background: {
+        position: center;
+        size: cover;
+    }
+    height: 400px;
+
+    &--1 {
+        background-image: url(../../assets/img/chicago.jpg);
+    }
+    &--2 {
+        background-image: url(../../assets/img/ny.jpg);
+    }
+    &--3 {
+        background-image: url(../../assets/img/la.jpg);
+    }
+
+}
+</style>

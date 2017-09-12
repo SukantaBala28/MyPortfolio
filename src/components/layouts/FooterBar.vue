@@ -55,7 +55,7 @@ export default {
 <style scoped>
 .main-footer{
 	padding: 150px 0px;
-	background-color: #FAFAFA;
+	background-color: #F6F6F6;
 }
 .mainfooterLeft, .mainfooterMiddle{
 	border-right: 2px solid #ff0000;
@@ -66,6 +66,6 @@ export default {
 }
 .subfooter{
 	padding: 15px 0px 0px 0px;
-	background-color: #F00000;
+	background-color: #727F80;
 }
 </style>
