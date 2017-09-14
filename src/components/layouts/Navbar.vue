@@ -56,4 +56,8 @@ export default {
   .navbar-item ul li{
     cursor: pointer;
   }
+  .nav-link{
+    cursor:pointer;
+  }
 </style>
+

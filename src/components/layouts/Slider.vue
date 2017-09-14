@@ -7,7 +7,7 @@
 	    <div class="slide slide--2"><h1>Slide 2</h1></div>
 	    <div class="slide slide--3"><h1>Slide 3</h1></div>
 		</agile>
-  </main>
+    </main>
 </template>
 
 <script>
@@ -19,7 +19,7 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .agile {
     &__dots {
         bottom: 0;
